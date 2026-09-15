@@ -1,24 +1,7 @@
 # SchnuBbys Repack
 
-Grafische Oberfläche (Tkinter) für ein Server-Verwaltungsmenü – gedacht für den
-Betrieb eines CMaNGOS-WoW-Servers (Classic / TBC / WotLK). Läuft ohne
+Grafische Oberfläche (Tkinter) für praktisch jedes Verwaltungsmenü – Läuft ohne
 zusätzliche Abhängigkeiten, nur mit der Python-Standardbibliothek.
-
-## Funktionen
-
-- **Run** – Server starten, stoppen, neu starten, Status abfragen, Logs
-  auswerten (anzeigen, filtern, einlesen, archivieren)
-- **Sources** – Server-Quellcode von GitHub laden (Classic, TBC, WotLK)
-- **Misc** – Datei-Download per URL, Cache leeren, Netzwerk-/Speicher-Tools,
-  Fortschritts-Demo, Programminfo
-- Beliebig tief verschachtelbare Untermenüs mit Pfadleiste ("Breadcrumbs") und
-  Zurück-Navigation
-- Aktionen laufen in einem Hintergrund-Thread, damit die Oberfläche während
-  langer Vorgänge (z. B. Downloads) reaktionsfähig bleibt
-- Fortschrittsanzeige mit Geschwindigkeit, verbleibender Zeit und
-  Protokollbereich; laufende Vorgänge lassen sich abbrechen
-- Echte Downloads mit Fortschrittsbalken (inkl. `.part`-Dateien, damit
-  unvollständige Downloads nicht als fertig gelten)
 
 ## Voraussetzungen
 
@@ -61,10 +44,3 @@ Funktion, wird sie beim Anklicken ausgeführt; ist `Ziel` selbst wieder eine
 Liste von Einträgen, öffnet sich ein Untermenü. Neue Menüpunkte oder
 Aktionen lassen sich dadurch einfach ergänzen, ohne den Rest der Oberfläche
 anzufassen.
-
-## Hinweis
-
-Ein Teil der Aktionen (z. B. Server-Start/-Stopp, Plugin-Installation,
-Netzwerk-Checks) ist aktuell simuliert (Demo-Zwecke) und führt keine echten
-Systembefehle aus. Die Downloads unter **Sources** und **Misc → Download**
-sind hingegen echte HTTP-Downloads.
