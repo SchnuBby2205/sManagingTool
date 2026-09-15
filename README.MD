@@ -1,25 +1,7 @@
-# SchnuBbys Repack
+# SchnuBbys sManagingTool
 
-Graphical interface (Tkinter) for a server management menu – built for
-running a CMaNGOS WoW server (Classic / TBC / WotLK). Runs without any
+Graphical interface (Tkinter) for basicaly any management menu – Runs without any
 extra dependencies, using only the Python standard library.
-
-## Features
-
-- **Run** – start, stop, restart the server, check status, review logs
-  (view, filter, load, archive)
-- **Sources** – download server source code from GitHub (Classic, TBC,
-  WotLK)
-- **Misc** – download a file via URL, clear cache, network/disk tools,
-  progress demo, program info
-- Arbitrarily deep, nestable submenus with a breadcrumb bar and back
-  navigation
-- Actions run in a background thread so the interface stays responsive
-  during long-running operations (e.g. downloads)
-- Progress display with speed, remaining time, and a log area; running
-  tasks can be cancelled
-- Real downloads with a progress bar (including `.part` files, so an
-  incomplete download is never mistaken for a finished one)
 
 ## Requirements
 
@@ -59,10 +41,3 @@ consists of `(name, description, target)`. If `target` is a function, it
 runs when clicked; if `target` is itself a list of entries, a submenu
 opens instead. New menu items or actions can be added easily without
 touching the rest of the interface.
-
-## Note
-
-Some actions (e.g. server start/stop, plugin installation, network
-checks) are currently simulated (for demo purposes) and don't run any
-real system commands. The downloads under **Sources** and **Misc →
-Download**, however, are real HTTP downloads.
